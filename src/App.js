@@ -1,13 +1,7 @@
 import './App.css';
 import CurrentTeam from './CurrentTeam';
 import React, { useState, useEffect } from 'react'
-
-const initialTeam = [{
-  id: 0,
-  name: "Sisyphus",
-  email: "ih8zeus@ouroboros.net",
-  role: "Struggler"
-}]
+import initialTeam from './data'
 
 function App() {
   const [currentTeam, setCurrentTeam] = useState([])
@@ -19,7 +13,8 @@ function App() {
   }, [])
   return (
     <div>
-      <h1>hello world</h1>
+      <h1>Team Builder</h1>
+      <h1>Current Team</h1>
   
     {
       currentTeam.map(member => {
@@ -28,6 +23,7 @@ function App() {
         )
       })
     }
+    <h1>Add member</h1>
     </div>
   );
 }

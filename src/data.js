@@ -1,4 +1,4 @@
-const intialTeam = [{
+const initialTeam = [{
     id: 0,
     name: "Sisyphus",
     email: "ih8zeus@ouroboros.net",
@@ -6,6 +6,16 @@ const intialTeam = [{
 },
 {
     id: 1,
-    name: ""
+    name: "Musashi",
+    email: "fiverings@budokan.com",
+    role: "Warrior Poet"
+},
+{
+    id: 2,
+    name: "Ishmael",
+    email: "seekingstudent@teacher.com",
+    role: "Teacher"
 }
 ]
+
+export default initialTeam;
