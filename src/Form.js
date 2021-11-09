@@ -39,6 +39,9 @@ export default function memberForm(props) {
                     onChange={onChange}
                     />
                 </label>
+                <input
+                    type="submit"
+                    />
             </div>
         </form>
     )
