@@ -1,7 +1,8 @@
 import './App.css';
 import CurrentTeam from './CurrentTeam';
-import React, { useState, useEffect } from 'react'
-import initialTeam from './data'
+import React, { useState, useEffect } from 'react';
+import initialTeam from './data';
+import Form from './Form';
 
 function App() {
   const [currentTeam, setCurrentTeam] = useState([])
@@ -24,6 +25,7 @@ function App() {
       })
     }
     <h1>Add member</h1>
+    <Form />
     </div>
   );
 }
